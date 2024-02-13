@@ -1,3 +1,3 @@
 # Relation Extraction
 Relation Extraction
-Yuxuan
+Group Member:Junfan Cheng, Tong Shen, Qiujie Xu, Yuxuan Zhang
