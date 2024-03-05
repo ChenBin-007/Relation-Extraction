@@ -16,7 +16,20 @@
   1: BiLSTM (./trained_model/BiLSTM_xxxx.h5)
   2: As the size of bert model overs the limitation of github, the result can be found by [this link](https://drive.google.com/drive/folders/17gy7A6w-dHqTzw7Bmkcfe4H0ApJ1ePSE?usp=drive_link).
 
-# Result
+# How to use this model to predict realtions with any input
+  For every model code provided, there exists a section named "Predictor" where users are allowed to modify the input sentence within the predictor method located in the final code cell. Prior to conducting any tests, it's imperative that users execute the initial cell of the Jupyter notebook to install all necessary dependencies from the requirements file. Subsequently, the cells under the "Predictor" section should be run sequentially. The predict result will be shown as the output of last cell.
+
+# Improvements
+  1: To enhance the original BiLSTM version, we integrated an additional attention layer to enhance its capability to focus on relevant labels and avoid concentrating on meaningless ones. The results displayed below demonstrate that this method is a promising approach to improve the performance of BiLSTM.
+  2: 
+
+# Result and Evaluation
+  The Following picture shows the result of different Relation extraction model, the evaluation standard is based on the F1 score.
+  ![Result of BiLSTM without attention](result/BiLSTM_without_attention_result.png)
+  ![Result of BiLSTM with attention](result/BiLSTM_with_attention_result.png)
+  ![Result of BERT E1](result/BiLSTM_without_attention_result.png)
+  ![Result of BERT E6](result/BiLSTM_with_attention_result.png) 
+  
 
 # Citation
 ```
