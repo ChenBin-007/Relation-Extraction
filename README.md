@@ -10,7 +10,13 @@
   The dataset is originally obtained from TPLinker, refer to [TPLinker officail repository](https://github.com/131250208/TPlinker-joint-extraction). 
   
   The path of dataset files: ./model_data
-  
+
+# Trained Model file
+  The trained model of this assignment has been upload.
+  1: BiLSTM (./trained_model/BiLSTM_xxxx.h5)
+  2: As the size of bert model overs the limitation of github, the result can be found by [this link](https://drive.google.com/drive/folders/17gy7A6w-dHqTzw7Bmkcfe4H0ApJ1ePSE?usp=drive_link).
+
+# Result
 
 # Citation
 ```
