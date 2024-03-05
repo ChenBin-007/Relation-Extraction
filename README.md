@@ -1,6 +1,6 @@
 # Relation Extraction (COMP61332 Group Coursework)
   This Project is temporarily used for the group coursework, which contains two function of Relation extraction.
-  1. BiLSTM, 2. Bert (pretrained model: bert-base-cased)
+  1. [BiLSTM](model_code/BILSTM.ipynb), 2. [Bert (pretrained model: bert-base-cased)](model_code/BERT.ipynb)
 # Group Member:
   Junfan Cheng, Tong Shen, Qiujie Xu, Yuxuan Zhang
 
@@ -20,15 +20,21 @@
   For every model code provided, there exists a section named "Predictor" where users are allowed to modify the input sentence within the predictor method located in the final code cell. Prior to conducting any tests, it's imperative that users execute the initial cell of the Jupyter notebook to install all necessary dependencies from the requirements file. Subsequently, the cells under the "Predictor" section should be run sequentially. The predict result will be shown as the output of last cell.
 
 # Improvements
-  1: To enhance the original BiLSTM version, we integrated an additional attention layer to enhance its capability to focus on relevant labels and avoid concentrating on meaningless ones. The results displayed below demonstrate that this method is a promising approach to improve the performance of BiLSTM.
-  2: 
+  1. To enhance the original BiLSTM version, we integrated an additional attention layer to enhance its capability to focus on relevant labels and avoid concentrating on meaningless ones. The results displayed below demonstrate that this method is a promising approach to improve the performance of BiLSTM.
+
+  2. Bert
 
 # Result and Evaluation
   The Following picture shows the result of different Relation extraction model, the evaluation standard is based on the F1 score.
-  ![Result of BiLSTM without attention](result/BiLSTM_without_attention_result.png)
-  ![Result of BiLSTM with attention](result/BiLSTM_with_attention_result.png)
-  ![Result of BERT E1](result/BiLSTM_without_attention_result.png)
-  ![Result of BERT E6](result/BiLSTM_with_attention_result.png) 
+
+  BiLSTM: The result of BiLSTM with attention (left) and without attention (right) on the test dataset.
+  
+  <img src="result/BILSTM_with_attention_result.png" alt="BiLSTM with attention" width="400"/> <img src="result/BILSTM_without_attention_result.png" alt="BiLSTM with attention" width="400"/>
+
+
+  BERT: The result of Bert with xxx (left) and without xxx (right) on the test dataset.
+  
+  <img src="result/BERT_cased_E1_result.png" alt="Bert 1" width="400"/> <img src="result/BERT_cased_E6_result.png" alt="Bert 2 2" width="400"/>
   
 
 # Citation
