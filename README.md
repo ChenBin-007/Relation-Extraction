@@ -21,7 +21,7 @@
 
   Users can change the input sentence by changing the _'new_sentence'_ argument of the _'predict_new_sentence'_ method.
 
-  Tips: Before testing or predicting, ensure the BERT model is downloaded and placed in the directory (./trained_model).
+  *Tips: Before testing or predicting, ensure the BERT model is downloaded and placed in the directory (./trained_model).*
 
 # Adaptations/Improvements
   1. To enhance the [original BiLSTM version](https://medium.com/southpigalle/simple-relation-extraction-with-a-bi-lstm-model-part-1-682b670d5e11), we integrated an additional embedding and attention layer to enhance its capability to focus on relevant labels and avoid concentrating on meaningless ones. The results displayed below demonstrate that this method is a promising approach to improving the performance of BiLSTM.
