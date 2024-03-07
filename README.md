@@ -12,21 +12,23 @@
   The path of dataset files: [URL](./nyt_dataset)
 
 # Trained Model file
-  The trained model of this assignment has been uploaded.
-  1. BiLSTM (./trained_model/BiLSTM_xxxx.h5)
-  2. As the size of the **Bert** model overs the limitation of GitHub, the result can be found by [this link](https://drive.google.com/drive/folders/17gy7A6w-dHqTzw7Bmkcfe4H0ApJ1ePSE?usp=drive_link). 
+  The trained model of this assignment has been uploaded in [this link](https://drive.google.com/drive/folders/17gy7A6w-dHqTzw7Bmkcfe4H0ApJ1ePSE?usp=drive_link). Please ensure all models are downloaded and put in the _"trained_model"_ folder before running the code.
 
 # How to use this model to predict relations with any input sentences.
-  For every model code provided, there exists a section named "Predictor" where users are allowed to modify the input sentence within the predictor method located in the final code cell. Before conducting any tests, users must execute the initial cell of the Jupyter Notebook to check and install all necessary dependencies from the requirements file. Subsequently, the cells under the "Predictor" section should be run sequentially. The predicted result will be shown as the output of the last cell.
+  For every model code provided, there exists a section named "Predictor" where users are allowed to modify the input sentence. 
+  
+  1. Before conducting any tests, users must execute the initial cell of the Jupyter Notebook to check and install all necessary dependencies.
+  2. Subsequently, the cells under the "Predictor" section should be run sequentially. The predicted result will be shown as the output of the last cell.
+  3. Users can change the input sentence by changing the _'new_sentence'_ argument of the _'predict_new_sentence'_ method.
 
-  Users can change the input sentence by changing the _'new_sentence'_ argument of the _'predict_new_sentence'_ method.
-
-  *Tips: Before testing or predicting, ensure the BERT model is downloaded and placed in the directory (./trained_model).*
+  **Tips:**
+  1. Before testing or predicting, ensure all model files are downloaded and placed in the directory (./trained_model).
+  2. For the predictor of Bert, the 4.2 section does not need to run if you want to test the random input only.
 
 # Adaptations/Improvements
   1. To enhance the [original BiLSTM version](https://medium.com/southpigalle/simple-relation-extraction-with-a-bi-lstm-model-part-1-682b670d5e11), we integrated an additional embedding and attention layer to enhance its capability to focus on relevant labels and avoid concentrating on meaningless ones. The results displayed below demonstrate that this method is a promising approach to improving the performance of BiLSTM.
 
-  2. To improve BERT's performance, two additional models are used: one for Named Entity Recognition (NER) from the transformers library and another using [word2vec](https://code.google.com/archive/p/word2vec/). The approach involves expanding the dataset with entities identified by the NER model and selecting the most semantically similar words using cosine distance from the word2vec model. These results are integrated, applying weights based on the effectiveness of the NER and word2vec models, to compute the final score by summing these weighted contributions. Finally, pick the result label with the highest final score.
+  2. To improve BERT's performance and deal with the overfitting phenomenon, two additional models are used: one for Named Entity Recognition (NER) from the transformers library and another using [word2vec](https://code.google.com/archive/p/word2vec/). The approach involves expanding the dataset with entities identified by the NER model and selecting the most semantically similar words using cosine distance from the word2vec model. These results are integrated, applying weights based on the effectiveness of the NER and word2vec models, to compute the final score by summing these weighted contributions. Finally, pick the result label with the highest final score.
 
 # Result and Evaluation
   The following picture showcases how different relation extraction models perform, evaluated with the F1 score. This score is great because it checks if a model is not just good at finding correct relationships between words (precision) but also doesn't miss out on many (recall). 
@@ -37,9 +39,9 @@
   <img src="result/BILSTM_with_attention_result.png" alt="BiLSTM with attention" width="400"/> <img src="result/BILSTM_without_attention_result.png" alt="BiLSTM with attention" width="400"/>
 
 
-  BERT: The result of Bert with xxx (left) and without xxx (right) on the test dataset.
+  BERT: The result of Bert with NER & word2vec (left) and without NER & word2vec (right) on the test dataset.
   
-  <img src="result/BERT_cased_E1_result.png" alt="Bert 1" width="400"/> <img src="result/BERT_cased_E6_result.png" alt="Bert 2 2" width="400"/>
+  <img src="result/BERT_cased_E6_improve_result.png" alt="Bert 1" width="400"/> <img src="result/BERT_cased_E6_result.png" alt="Bert 2 2" width="400"/>
 
 # Reference
 1. Valette, Marion (2019). Simple Relation Extraction with a Bi-LSTM Model. Available online: https://medium.com/southpigalle/simple-relation-extraction-with-a-bi-lstm-model-part-1-682 b670d5e11
