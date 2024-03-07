@@ -21,7 +21,9 @@
   2. Subsequently, the cells under the "Predictor" section should be run sequentially. The predicted result will be shown as the output of the last cell.
   3. Users can change the input sentence by changing the _'new_sentence'_ argument of the _'predict_new_sentence'_ method.
 
-  *Tips: Before testing or predicting, ensure all model files are downloaded and placed in the directory (./trained_model).*
+  **Tips:**
+  1. Before testing or predicting, ensure all model files are downloaded and placed in the directory (./trained_model).
+  2. For the predictor of Bert, the 4.2 section does not need to run if you want to test the random input only.
 
 # Adaptations/Improvements
   1. To enhance the [original BiLSTM version](https://medium.com/southpigalle/simple-relation-extraction-with-a-bi-lstm-model-part-1-682b670d5e11), we integrated an additional embedding and attention layer to enhance its capability to focus on relevant labels and avoid concentrating on meaningless ones. The results displayed below demonstrate that this method is a promising approach to improving the performance of BiLSTM.
