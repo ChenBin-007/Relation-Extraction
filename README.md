@@ -17,7 +17,7 @@
 # How to use this model to predict relations with any input sentences.
   For every model code provided, there exists a section named "Predictor" where users are allowed to modify the input sentence. 
   
-  1. Before conducting any tests, users must execute the initial cell of the Jupyter Notebook to check and install all necessary dependencies.
+  1. Before conducting any tests, users must execute the first(install) and second(import) cells of the Jupyter Notebook to check and install all necessary dependencies.
   2. Subsequently, the cells under the "Predictor" section should be run sequentially. The predicted result will be shown as the output of the last cell.
   3. Users can change the input sentence by changing the _'new_sentence'_ argument of the _'predict_new_sentence'_ method.
 
