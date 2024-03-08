@@ -8,18 +8,19 @@
   The dataset applied in this project is only the "NYT" part of [UniRel Model](https://github.com/wtangdev/UniRel/blob/main/README.md), which data can also be downloaded from [the shared drive link](https://drive.google.com/file/d/1-3uBc_VfaCEWO2_FegzSyBXNeFmqhv7x/view)
   
   The dataset is originally obtained from TPLinker, refer to [TPLinker official repository](https://github.com/131250208/TPlinker-joint-extraction). 
-  
-  The path of dataset files: [URL](./nyt_dataset)
+
+  **Please ensure you download the related dataset file and put them under the correct path**: 
+  1. Download and unzip the dataset from [this shared link](https://drive.google.com/file/d/1-3uBc_VfaCEWO2_FegzSyBXNeFmqhv7x/view).
+  2. Copy all the files from the **"nyt"** folders within the unzipped folders to the dataset file path: _"./nyt_dataset"_.
 
 # Trained Model file
   The trained model of this assignment has been uploaded in [this link](https://drive.google.com/drive/folders/1o3ftZdWDakhNoVBQofVwe7zYQQVOUOYt?usp=sharing). Please ensure all models are downloaded and put in the _"trained_model"_ folder before running the code.
 
 # How to use this model to predict relations with any input sentences.
   For every model code provided, there exists a section named "Predictor" where users are allowed to modify the input sentence. 
-  
-  1. Before conducting any tests, users must execute the first(install) and second(import) cells of the Jupyter Notebook to check and install all necessary dependencies.
-  2. Subsequently, the cells under the "Predictor" section should be run sequentially. The predicted result will be shown as the output of the last cell.
-  3. Users can change the input sentence by changing the _'new_sentence'_ argument of the _'predict_new_sentence'_ method.
+
+  1. **BiLSTM**: Execute all section cells except for "Model Training and Validation", "Training and Validation Analysis", "Model Testing", and "Drawing the Heatmap of the Confusion Matrix" Subsequently. Users can change the input sentence by changing the _'new_sentence'_ argument of the _'predict_new_sentence'_ method in the last cell of "Predictor".
+  2. **Bert**: Firstly, Execute all cells of "Necessary (requirements & data preprocessing)". Then, the cells under the "Predictor" section (1, 2, 3, 4.1.1, 4.1.2) should be run sequentially. The predicted result will be shown as the output of the last cell in section 4.1.2. (user can change input sentences in the cell of section 4.1.1)
 
   **Tips:**
   1. Before testing or predicting, ensure all model files are downloaded and placed in the directory (./trained_model).
