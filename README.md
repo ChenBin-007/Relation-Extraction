@@ -8,8 +8,10 @@
   The dataset applied in this project is only the "NYT" part of [UniRel Model](https://github.com/wtangdev/UniRel/blob/main/README.md), which data can also be downloaded from [the shared drive link](https://drive.google.com/file/d/1-3uBc_VfaCEWO2_FegzSyBXNeFmqhv7x/view)
   
   The dataset is originally obtained from TPLinker, refer to [TPLinker official repository](https://github.com/131250208/TPlinker-joint-extraction). 
-  
-  The path of dataset files: [URL](./nyt_dataset)
+
+  **Please ensure you download the related dataset file and put them under the correct path**: 
+  1. Download and unzip the dataset from [this shared link](https://drive.google.com/file/d/1-3uBc_VfaCEWO2_FegzSyBXNeFmqhv7x/view).
+  2. Copy all the files from the **"nyt"** folders within the unzipped folders to the dataset file path: _"./nyt_dataset"_.
 
 # Trained Model file
   The trained model of this assignment has been uploaded in [this link](https://drive.google.com/drive/folders/1o3ftZdWDakhNoVBQofVwe7zYQQVOUOYt?usp=sharing). Please ensure all models are downloaded and put in the _"trained_model"_ folder before running the code.
