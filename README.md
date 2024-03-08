@@ -12,7 +12,7 @@
   The path of dataset files: [URL](./nyt_dataset)
 
 # Trained Model file
-  The trained model of this assignment has been uploaded in [this link](https://drive.google.com/drive/folders/17gy7A6w-dHqTzw7Bmkcfe4H0ApJ1ePSE?usp=drive_link). Please ensure all models are downloaded and put in the _"trained_model"_ folder before running the code.
+  The trained model of this assignment has been uploaded in [this link](https://drive.google.com/drive/folders/1o3ftZdWDakhNoVBQofVwe7zYQQVOUOYt?usp=sharing). Please ensure all models are downloaded and put in the _"trained_model"_ folder before running the code.
 
 # How to use this model to predict relations with any input sentences.
   For every model code provided, there exists a section named "Predictor" where users are allowed to modify the input sentence. 
