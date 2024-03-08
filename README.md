@@ -20,7 +20,7 @@
   For every model code provided, there exists a section named "Predictor" where users are allowed to modify the input sentence. 
 
   1. **BiLSTM**: Execute all section cells except for "Model Training and Validation", "Training and Validation Analysis", "Model Testing", and "Drawing the Heatmap of the Confusion Matrix" Subsequently.
-  2. **Bert**: Firstly, Execute all cells of "Necessary". Then, the cells under the "Predictor" section should be run sequentially. The predicted result will be shown as the output of the last cell.
+  2. **Bert**: Firstly, Execute all cells of "Necessary (requirements & data preprocessing)". Then, the cells under the "Predictor" section should be run sequentially. The predicted result will be shown as the output of the last cell in section 4.1.2.
   3. Users can change the input sentence by changing the _'new_sentence'_ argument of the _'predict_new_sentence'_ method.
 
   **Tips:**
